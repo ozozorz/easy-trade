@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "io.github.ozozorz.easytrade.mixin.client",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "GuiMixin",
+    "MerchantScreenMixin",
+    "MultiPlayerGameModeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

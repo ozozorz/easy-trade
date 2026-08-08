@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "easy-trade",
+  "version": "${version}",
+  "name": "easy-trade",
+  "description": "Bookmark villager offers and complete them through a hidden vanilla trading menu.",
+  "authors": [
+    "ozozorz"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.ozozorz.easytrade.EasyTradeClient"
+    ],
+    "modmenu": [
+      "io.github.ozozorz.easytrade.compat.EasyTradeModMenu"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "easy-trade.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "26.2",
+    "java": ">=25",
+    "fabric-api": ">=0.156.0+26.2"
+  },
+  "suggests": {
+    "modmenu": ">=20.0.1"
+  }
+}
